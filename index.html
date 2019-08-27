@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/css/bootstrap.css" rel='stylesheet'/>
+    <title>Sitio web de Alejandro</title>
+    <!--insertar código CSS -->
+    <style>
+        h1 {color:red}
+        h2 {color:yellow}
+    </style>
+    <link href='/css/style.css' rel='stylesheet'>
+    <!--insertar código javascript-->
+    <script type="text/javascript">
+        var minombre=prompt("Ingrese su nombre");
+        alert("El nombre ingresado es:"+minombre);
+    </script>
+
+</head>
+<!--Body es el cuerpo de la página web-->
+<body>
+    <div class="container">
+    <!--las etiquetas H1 H2 ...H6
+        Permiten hacer títulos de
+        distinta relevancia-->
+    <h1 class="TituloPrincipal" id="TituloIndex" style="color:green">PROYECTO DE INGENIERÍA DE SOFTWARE</h1>
+    <h2>Rubén Alejandro Ramirez</h2> 
+    <h3 >Probando HTML, CSS y Javascript</h3> 
+    <h4>Texto escrito en H4</h4>
+    <h5>Texto escrito en H5</h5>
+    <h6 >Texto escrito en H6</h6>
+    <!--inserta una linea horizontal(Deprecado)-->
+    <hr />
+    <!--al insertar imágenes el atributo más importante es
+    src(source) que define la ubicación de la imagen a 
+    insertar-->
+    <!--Marquee muestra un texto en movimiento(Deprecada)-->
+    <marquee>   
+        <a href="http://www.isp20.edu.ar">
+            <img src="/img/logoisp20.jpg" alt="Logo del instituto"  height="200px" />  
+    -       Conrado delegado 2019
+        </a>
+    </marquee>
+
+    <!--creamos una tabla
+        <table> tabla
+        <tr> filas
+        <th> celda de títulos            
+        <td> celdas
+            colspan= atributo para combinar columnas
+            rowspan= atributo para combinar filas
+    -->
+    <table class="table table-dark" >
+        <tr>
+            <th colspan="4">Creando sitios web</th>
+        </tr>
+        <tr>
+            <th rowspan="4">Tecnologías</th>
+            <th>HTML5</th>
+            <th>CSS</th>
+            <th>Javascript</th>
+        </tr>
+        <tr>
+            <td>H1</td>
+            <td>STYLE</td>
+            <td>VAR</td>
+        </tr>
+        <tr>
+            <td>H2</td>
+            <td>BORDER</td>
+            <td>PROMPT</td>
+        </tr>
+        <tr>
+            <td>H3</td>
+            <td>COLOR</td>
+            <td>ALERT</td>
+        </tr>
+    </table>
+    <!--creamos un enlace con la etiqueta A
+        su atributo href nos permite indicar hacia
+        donde nos referencia el enlace-->
+    <a href="http://www.google.com">Buscar en google</a>
+    <!--BR es la etiqueta para insertar un enter
+        break-->
+    <br />
+    <a class="TituloPrincipal" href="formulario.html">Ingresar al formulario</a>
+    </div>
+</body>
+</html>

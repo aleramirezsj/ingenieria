@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='/css/bootstrap.css' rel='stylesheet'>
+    <link href='/css/style.css' rel='stylesheet'>
+    <title>Formulario</title>
+    <style type="text/css">
+        label {color:red;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de clientes</h1>
+        <a href="index.html">volver</a>
+        <form action="http://www.isp20.edu.ar" method="get">
+            <label style="color: brown">
+                Nombre:
+                <input class="form-control" type="text" name="txtnombre">
+            </label>
+            <br/>
+            <label>
+                Apellido:
+                <input class="form-control" type="text" name="txtapellido" placeholder="Primera letra con mayúscula por favor">
+            </label>
+            <br/>
+            <label>
+                Contraseña:
+                <input class="form-control" type="password" name="txtpassword" placeholder="utilice más de 3 caracteres">
+            </label>
+            <br/>
+            <label>
+                Argentino
+                <input type="checkbox" name="chkargentino" />
+            </label>
+            <br/>
+            <label>
+                Localidad:
+                <select class="form-control" name="cbolocalidad" >
+                    <option value="0">Seleccione una localidad</option>
+                    <option value="San Justo">San Justo</option>
+                    <option value="Gobernador Crespo">Gobernador Crespo</option>
+                    <option value="Videla">Videla</option>
+                    <option value="Marcelino Escalada">Marcelino Escalada</option>
+                </select>
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="radtipopersona" value="Alumno"> 
+                Alumno
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="radtipopersona" value="Docente"> 
+                Docente
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="radtipopersona" value="Directivo"> 
+                Directivo
+            </label>
+            <br />
+            <label>
+                Observaciones:
+                <textarea rows="4" cols="60" name="txaobservaciones"></textarea>
+            </label>
+            <br/>
+            <input class="btn-lg" type="submit" name="btnenviar" value="Enviar datos">
+        </form>
+    </div>
+</body>
+</html>
