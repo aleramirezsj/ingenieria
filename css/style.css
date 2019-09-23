@@ -1,4 +1,22 @@
 * {color:blue;}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+      background-image: url(../img/fondo2.jpg);
+    }
+  }
+
+
 label {text-decoration: underline;}
 .TituloPrincipal {border: 5px double #70139F}
 #TituloIndex {background: #E5B9FB}

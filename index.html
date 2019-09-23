@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/bootstrap.css" rel='stylesheet'/>
+
     <title>Sitio web de Alejandro</title>
     <!--insertar código CSS -->
     <style>
         h1 {color:red}
         h2 {color:yellow}
     </style>
-    <link href='/css/style.css' rel='stylesheet'>
-    <!--insertar código javascript-->
+    <link href='css/style.css' rel='stylesheet'>
+    <!--insertar código javascript
     <script type="text/javascript">
         var minombre=prompt("Ingrese su nombre");
         alert("El nombre ingresado es:"+minombre);
-    </script>
-
+    </script>-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
 </head>
 <!--Body es el cuerpo de la página web-->
-<body>
+<body id="fondo">
     <div class="container">
     <!--las etiquetas H1 H2 ...H6
         Permiten hacer títulos de
@@ -28,7 +30,7 @@
     <h1 class="TituloPrincipal" id="TituloIndex" style="color:green">PROYECTO DE INGENIERÍA DE SOFTWARE</h1>
     <h2>Rubén Alejandro Ramirez</h2> 
     <h3 >Probando HTML, CSS y Javascript</h3> 
-    <h4>Texto escrito en H4</h4>
+    <h4 id="tituloh4">Texto escrito en H4</h4>
     <h5>Texto escrito en H5</h5>
     <h6 >Texto escrito en H6</h6>
     <!--inserta una linea horizontal(Deprecado)-->
@@ -39,9 +41,9 @@
     <!--Marquee muestra un texto en movimiento(Deprecada)-->
     <marquee>   
         <div id="textoEnMovimiento">
-            <a href="http://www.isp20.edu.ar">
-                <img src="img/logoisp20.jpg" alt="Logo del instituto"  height="200px" />  <br />
-        -       Conrado delegado 2019
+            <a href="http://www.isp20.edu.ar"></a>
+                <img id="logo" src="img/logoisp20.jpg" alt="Logo del instituto"  height="200px" />  <br />
+        -       Conrado delegado 2019 Conrado delegado 2019 Conrado delegado 2019
             </a>
         </div>
     </marquee>
